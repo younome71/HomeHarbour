@@ -44,7 +44,7 @@ function Register() {
           <input name="password" type="password" placeholder="Password" />
           <button disabled={isLoading}>Register</button>
           {error && <span>{error}</span>}
-          <Link to="/login">Do you have an account?</Link>
+          <Link to="/login">Already have an account?</Link>
         </form>
       </div>
       <div className="imgContainer">
