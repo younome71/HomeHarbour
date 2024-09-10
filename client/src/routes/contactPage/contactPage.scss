@@ -1,0 +1,55 @@
+// contactUsPage.scss
+@import "../../responsive.scss";
+
+.contactUsPage {
+  display: flex;
+  height: 100%;
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+
+      @include lg {
+        width: 105%;
+      }
+    }
+  }
+
+  .textContainer {
+    flex: 3;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+
+    @include lg {
+      padding-left: 50px;
+    }
+
+    @include md {
+      padding: 0;
+    }
+
+    @include sm {
+      justify-content: flex-start;
+    }
+
+    .title {
+      font-size: 64px;
+
+      @include lg {
+        font-size: 48px;
+      }
+    }
+  }
+}
